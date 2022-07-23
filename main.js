@@ -29,10 +29,7 @@ const obtenerDatos = async (ip, options) => {
                         Región: ${data.location.region["name"]} <br>
                         Continente: ${data.location.continent["name"]} <br>
                         Hora actual: ${data.time_zone.current_time} <br>
-                        Latitud: ${data.location.latitude} <br>
-                        Longitud: ${data.location.longitude} <br>
-
-                        
+                        Coordenadas: ${data.location.latitude}, ${data.location.longitude} <br>
                         `;
     
     botonEnviar.setAttribute("aria-busy", "false");
